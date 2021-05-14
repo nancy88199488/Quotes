@@ -8,6 +8,7 @@ import { Quote } from './quote';
 })
 export class AppComponent {
   quotes:Quote[] = [
+    {id:1, name:"Success is most often achieved by those who don't know that failure is inevitable."}
 
   ]
 }
