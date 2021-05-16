@@ -1,4 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
 body{
     background-image: url(./assets/quote.jpg);
     background-size: cover;
@@ -7,7 +15,7 @@ body{
 }
 
 h1, p {
-    color: yellow;
+    color: wheat;
     text-align: center;
     justify-content: center;
 }
@@ -22,7 +30,7 @@ p {
     font-style: oblique;
 }
 ul, li {
-    color:yellow;
+    color:wheat;
     list-style-type: square;
     font-size: 30px;
 }
