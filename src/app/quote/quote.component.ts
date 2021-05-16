@@ -53,8 +53,8 @@ export class QuoteComponent implements OnInit {
 
   downvote = 0;
 
-  appvote() {
-    this.uppvote = this.appvote + 1;
+  avote() {
+    this.upvote = this.appvote + 1;
 
   }
 

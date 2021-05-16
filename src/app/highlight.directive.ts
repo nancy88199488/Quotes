@@ -7,7 +7,7 @@ export class HighlightDirective {
 
   constructor(private elem:ElementRef) { }
   @HostListener("click") onClicks(){
-    this.textDeco("line-through" )
+    this.textDeco("highlight" )
   }
 
   @HostListener("dblclick") onDoubleClicks(){
