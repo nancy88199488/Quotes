@@ -49,12 +49,12 @@ export class QuoteComponent implements OnInit {
       this.quotes.push(quote);
   }
 
-  appvote = 0;
+  upvote = 0;
 
   downvote = 0;
 
   avote() {
-    this.upvote = this.appvote + 1;
+    this.upvote = this.upvote + 1;
 
   }
 
