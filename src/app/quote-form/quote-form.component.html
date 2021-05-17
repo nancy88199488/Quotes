@@ -1,29 +1,28 @@
 <div class="container-fluid">
-    <h2 class="text-center">Share your Inspirational quotes</h2>
-    <hr>
-     <form (ngSubmit)='postQuote() ' #quoteForm='ngForm'>
-        <div class="form-group">
-  
-            <label for="name">Author</label>
-            <input type="text" class="form-control" id="author"[(ngMode)]="quoted.author" name="author" #author="ngModel" required>
+  <h2 class="text-center">Share your Inspirational quotes</h2>
+  <hr>
+  <form (ngSubmit)='postQuote() ' #quoteForm='ngForm'>
+    <div class="form-group">
 
-          <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
-            <p>Author is required</p>
-          </div>
-  
-        </div>
-        <div class="form-group">
-  
-            <label for="description">Quote</label>
-            <textarea class="form-control" id="quote"[(ngModel)]="quoted.description"name="quote"#quote="ngModel" rows="4" required></textarea>
-  
-        </div>
-        
-        <div class="form-group">
-            <label for="name">Posted by</label>
-            <input type='text' id="submit" id="name" [(ngModel)]="quoted.name" name="name" #name='ngModel' required>
-  
-        </div>
-        <button type="submit" class="btn btn-muted">Post Quote</button>
-    </form>
-  </div>
+      <label for="name">Author</label>
+      <input type="text" class="form-control" id="author" [(ngModel)]="quoted.author" name="author" #author="ngModel"
+        required>
+
+    </div>
+    <div class="form-group">
+
+      <label for="description">Quote</label>
+      <textarea class="form-control" id="quote" [(ngModel)]="quoted.description" name="quote" #quote="ngModel" rows="4"
+        required></textarea>
+
+    </div>
+
+    <div class="form-group">
+      <label for="name">Posted by</label>
+      <input type='text' id="submit" id="name" [(ngModel)]="quoted.name" name="name" #name='ngModel' required>
+
+    </div>
+    <button type="submit" class="btn btn-info">Post Quote</button>
+  </form>
+ 
+</div>

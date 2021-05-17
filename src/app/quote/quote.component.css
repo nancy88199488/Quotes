@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: teal;
+    font-style: italic;
+    margin-top: 50px;
+}
+
+h1{
+    padding-top: 20px;
+    color: turquoise;
+}
+
+.footer {
+    padding-top: 15px;
+    font-style: italic;
+}

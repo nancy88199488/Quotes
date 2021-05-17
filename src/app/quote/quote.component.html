@@ -22,9 +22,10 @@
       </div>
     </div>
     <div class="col-md-6">
-      <app-quote-form (postQuote)="postNewQuote($event)"></app-quote-form>
+      <app-quote-form (add)="addNewQuote($event)"></app-quote-form>
     </div>
   </div>
-
-  <p *ngIf="quotes.length > 10">You keep going</p>
+  <div class="footer">
+    <p class="btn btn-info" style="width: 100%;">Created by Nancy</p>
+  </div>
 </div>
