@@ -45,7 +45,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Live site
 
-View [ live ]()
+View [ live ](https://nancy88199488.github.io/Quotes/)
 
 ## Contacts
 
