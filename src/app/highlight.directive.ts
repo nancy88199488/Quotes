@@ -3,7 +3,7 @@ import { Directive,ElementRef,HostListener, Input  } from '@angular/core';
   selector: '[appHighlight]'
 })
 export class HighlightDirective {
-  @Input('appHighlight') highlightText: string;
+  @Input('appHighlight') highlightText: string ="{{quote.description}}"
 
   constructor(private el: ElementRef) { }
 
