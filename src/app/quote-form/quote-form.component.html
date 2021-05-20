@@ -12,17 +12,17 @@
     <div class="form-group">
 
       <label for="description">Quote</label>
-      <textarea class="form-control" id="quote" [(ngModel)]="quoted.description" name="quote" #quote="ngModel" rows="4"
-        required></textarea>
+      <input type="text" class="form-control" id="quote" [(ngModel)]="quoted.description" name="quote" #quote="ngModel" height="4rem"
+        required>
 
     </div>
 
     <div class="form-group">
-      <label for="name">Posted by</label>
-      <input type='text' id="submit" id="name" [(ngModel)]="quoted.name" name="name" #name='ngModel' required>
+      <label for="name">Posted by</label><br>
+      <input type='text' class="form-control" id="submit" id="name" [(ngModel)]="quoted.name" name="name" #name='ngModel' required>
 
     </div>
-    <button type="submit" class="btn btn-info">Post Quote</button>
+    <button type="submit" class="btn btn-outline-success">Post Quote</button>
   </form>
  
 </div>

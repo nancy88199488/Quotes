@@ -1,6 +1,6 @@
 <div class="container">
   <h1>A PALACE OF QUOTES</h1>
-  <P>Get in add your quote about success, love, life and get to insipire the
+  <P  style="font-weight: 600; color: f1ca89; text-align: center;">Get in add your quote about success, love, life and get to insipire the
     world</P>
   <hr />
 
@@ -8,10 +8,9 @@
     <div class="col-md-6">
       <div *ngFor="let quote of quotes; let i = index">
         <div>
-          <h4 id="{{ i }}" appHighlight>
-            {{ quote.name }} due on {{ quote.completeDate | date | uppercase }}
-          </h4>
-          <button (click)="toggleQuotes(i)" class="btn btn-info">
+          <p class="quote" appHighlight *ngIf="highestUpvote()===quote.upvote && quote.upvote>0">{{quote.description}}</p>
+          <p  class="quote" *ngIf="highestUpvote()!==quote.upvote || quote.upvote===0">{{quote.description}}</p>
+          <button (click)="toggleQuotes(i)" class="btn btn-outline-success">
             Toggle Quotes
           </button>
         </div>
@@ -26,6 +25,6 @@
     </div>
   </div>
   <div class="footer">
-    <p class="btn btn-info" style="width: 100%;">Created by Nancy</p>
+    <p class="btn btn-outline-success" style="width: 100%;">Created by Nancy</p>
   </div>
 </div>
